@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+
+  app:
+
+    build: .
+
+    command: npm start
+
+    ports:
+
+      - '4200:4200' 
+
+    expose:
+
+      - '4200' 
+
+    volumes:
+
+      - ./:/usr/app/
